@@ -1,0 +1,34 @@
+@import './../../styles/_variables.scss';
+.nav {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    font-weight: 600;
+    font-size: 30px;
+    &__highlight {
+      color: $text-color-secondary;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    padding: 1rem 0;
+    &__element{
+      border-radius: 15px;
+      padding: 0.3em 1.5em;
+      font-size: 1em;
+      font-weight: 500;
+      transition: border-color 0.25s;
+
+      border: 1px solid $border-color;
+      &:hover {
+        background-color: $border-color;
+        color: $light-gray;
+      }
+    }
+
+  }
+}
